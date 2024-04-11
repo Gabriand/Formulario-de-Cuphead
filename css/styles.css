@@ -35,7 +35,6 @@ body {
 }
 
 h1 {
-    font-size: 4.5rem;
     text-transform: uppercase;
     font-weight: 800;
 }
@@ -46,10 +45,6 @@ h3 {
     margin: 0.6rem auto; 
 }
 
-p {
-    font-size: 2.1rem;
-}
-
 a {
     text-decoration: none;
     color: var(--fondo);
@@ -58,7 +53,7 @@ a {
 /* Presentación */
 .presentacion {
     width: 85%;
-    margin: 2rem auto;
+    margin: 2.5rem auto;
     padding: 0.1rem;
     background-color: #0d0d0d9e;
     border-radius: 1rem;
@@ -70,28 +65,45 @@ a {
     margin: 0.9rem;
 }
 
-.presentacion__description {
-    padding-bottom: 1rem;
+.presentacion__title {
+    font-size: 2.9rem;
 }
 
+.presentacion__description {
+    padding-bottom: 1rem;
+    font-size: 1.6rem;
+}
 
 @media (min-width: 768px) {
     .presentacion {
         width: 75%;
         margin: 1.5rem auto;
     }
-}
 
+    .presentacion__title {
+        font-size: 4.3rem;
+    }
+
+    .presentacion__description {
+        font-size: 2rem;
+    }
+}
 
 /* Formulario */
 .formulario {
     padding: 2.5rem;
-    margin: 0 auto 2.5rem auto;
-    width: 95%;
+    margin: 0 auto 3rem auto;
+    width: 80%;
     min-width: 350px;
     max-width: 650px;
     background-color: #030303;
     border-radius: 1rem;
+}
+
+@media (min-width: 768px) {
+    .formulario {
+        width: 95%;
+    }
 }
 
 .icon {
@@ -146,6 +158,7 @@ select {
     display: grid;
     grid-template-columns: 20px auto;
     gap: 0.5rem;
+    margin-left: 1rem;
 }
 
 /* Final */
