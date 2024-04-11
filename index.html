@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Formulario de Videojuegos</title>
+        <link rel="stylesheet" href="./css/styles.css" />
+    </head>
+    <body>
+        <div class="presentacion">
+            <h1 class="presentacion__title" id="title">Encuesta sobre Cuphead</h1>
+            <p class="presentacion__description" id="description">
+                ¡Hola! Esta encuesta tiene como objetivo conocer la opinión de los
+                jugadores sobre Cuphead, un videojuego de plataformas de acción y
+                disparos.
+            </p>            
+        </div>
+        
+        <form class="formulario" id="survey-form" required>
+            <fieldset>
+                <legend>Informacion personal</legend>
+                <label>
+                    <h3>Nombre:</h3>
+                    <input class="informacion"
+                        id="name-label"
+                        type="text"
+                        placeholder="Ingrese su Nombre"
+                        required
+                    />
+                </label>
+                <label>
+                    <h3>Numero:</h3> 
+                    <input class="informacion"
+                        id="number-label"
+                        type="num"
+                        min="9"
+                        max="12"
+                        placeholder="Ingrese su numero"
+                    />
+                </label>
+                <label>
+                    <h3>Email:</h3>
+                    <input class="informacion"
+                        id="email-label"
+                        type="email"
+                        placeholder="Ingrese su correo"
+                        required
+                    />
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Experiencia de juego</legend>
+                <label for="question-1">
+                    <h3>¿Has jugado Cuphead?</h3>
+                    <div class="radio-grupo">
+                        <input name="question-1" type="radio" checked />
+                        <span>Si</span>
+                        <input  name="question-1" type="radio" />
+                        <span>No</span>
+                    </div>
+                </label>
+
+                <label>
+                    <h3>Si has jugado, ¿en qué plataforma lo has hecho?</h3>
+                    <select id="dropdown">
+                        <option disabled selected>-- Selecciona --</option>
+                        <option>PC</option>
+                        <option>Xbox One</option>
+                        <option>Nintendo Switch</option>
+                        <option>PlayStation 4</option>
+                        <option>Otro</option>
+                    </select>
+
+                    <h3>¿Cuánto tiempo has jugado a Cuphead?</h3>
+                    <select id="dropdown">
+                        <option disabled selected>-- Selecciona --</option>
+                        <option>Menos de 5 horas</option>
+                        <option>Entre 5 y 10 horas</option>
+                        <option>Entre 10 y 20 horas</option>
+                        <option>Más de 20 horas</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Opinion personal</legend>
+                <label class="column">
+                    <h3>¿Qué te pareció la dificultad del juego?</h3>
+                    <div class="radio-grupo">
+                        <input name="option-1" value="1" type="radio" />Muy difícil
+                        <input name="option-1" value="2" type="radio" />Difícil
+                        <input name="option-1" value="3" type="radio" />Normal
+                        <input name="option-1" value="4" type="radio" />Fácil
+                        <input name="option-1" value="5" type="radio" />Muy fácil
+                    </div>
+                </label>
+                <label>
+                    <h3>¿Qué te pareció la mecánica de juego?</h3>
+                    <div class="radio-grupo">
+                        <input name="option-2" type="radio" />Excelente
+                        <input name="option-2" type="radio" />Buena
+                        <input name="option-2" type="radio" />Regular
+                        <input name="option-2" type="radio" />Mala <input name="option-2" type="radio" />Muy
+                        mala
+                    </div>
+                </label>
+                <label class="column">
+                    <h3>¿Qué te pareció el diseño de los jefes?</h3>
+                    <div class="radio-grupo">
+                        <input name="option-3" type="radio" />Excelente
+                        <input name="option-3" type="radio" />Buena
+                        <input name="option-3" type="radio" />Regular
+                        <input name="option-3" type="radio" />Mala <input name="option-3" type="radio" />Muy
+                        mala
+                    </div>
+                </label>
+                <label>
+                    <h3>¿Qué te pareció la banda sonora del juego?</h3>
+                    <div class="radio-grupo">
+                        <input name="option-4" type="radio" />Excelente
+                        <input name="option-4" type="radio" />Buena
+                        <input name="option-4" type="radio" />Regular
+                        <input name="option-4" type="radio" />Mala <input name="option-4" type="radio" />Muy
+                        mala
+                    </div>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Sugerencias</legend>
+                <label>
+                    <h3>¿Qué mejorarías del juego?</h3>
+                    <textarea rows="3" cols="30" placeholder="Escribe aqui"></textarea>
+                </label>
+                <label>
+                    <h3>¿Qué te gustaría ver en un futuro DLC o secuela?</h3>
+                    <textarea rows="3" cols="30" placeholder="Escribe aqui"></textarea>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Adicional</legend>
+                <label class="column" for="question-2">
+                    <h3>¿Recomendarías Cuphead a otros jugadores?</h3>
+                    <div class="radio-grupo">
+                        <input name="question-2" type="radio" checked />Si 
+                        <input name="question-2" type="radio" />No
+                    </div>
+                </label>
+                <label>
+                    <h3>¿Por qué?</h3>
+                    <textarea rows="3" cols="30" placeholder="Escribe aqui"></textarea>
+                </label>
+            </fieldset>
+
+            <label for="terms-and-conditions">
+                <input
+                    id="terms"
+                    type="checkbox"
+                    name="terms-and-conditions"
+                    required
+                />
+                Acepta los <a href="#" target="_blank">terminos y condiciones</a>
+            </label>
+
+            <input class="boton" type="submit" value="Enviar" />
+
+            <p class="agradecimiento">
+                Muchas gracias por tu participación en esta encuesta.
+            </p>
+        </form>
+    </body>
+</html>

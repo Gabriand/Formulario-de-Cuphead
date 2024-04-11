@@ -1,0 +1,148 @@
+:root {
+    --primario: #f8f1d8;
+    --secundario: #fabb5c;
+    --texto: #7a5cfa;
+    --fondo: #3e0e75;
+
+    --blanco: #f5f5f5;
+    --negro: #0d0d0d;
+
+    --font: monospace, Arial, helvetica, sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*1rem = 10px*/
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* Globales */
+body {
+    margin: 0 auto;
+    font-family: var(--font);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: var(--blanco); 
+    background-color: var(--negro);
+    /*
+    background-image: url(https://images.pexels.com/photos/1293269/pexels-photo-1293269.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    */
+}
+
+h1 {
+    font-size: 4.5rem;
+    color: var(--texto);
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 0.6rem auto; 
+}
+
+p {
+    font-size: 2.1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--fondo);
+}
+
+/* Presentación */
+.presentacion {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.presentacion__title,
+.presentacion__description {
+    text-align: center;
+}
+
+.presentacion__description {
+    padding-bottom: 1rem;
+}
+
+/* Formulario */
+.formulario {
+    padding: 2.5rem;
+    margin: 0 auto;
+    width: 95%;
+    min-width: 350px;
+    max-width: 650px;
+    background-color: #030303;
+    border-radius: 1rem;
+}
+
+fieldset {
+    border: none;
+    padding: 1rem 0;
+    border-bottom: 0.3rem solid var(--fondo);
+    margin-bottom: 2.5rem;
+}
+
+legend {
+    color: var(--texto);
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+label {
+    display: block;
+    font-size: 1.9rem;
+}
+
+input,
+textarea {
+    border: none;
+    background-color: var(--fondo);
+    border-radius: 0.3rem;
+    color: var(--blanco);
+}
+
+.informacion { 
+    width: 100%;
+    padding: 0.9rem;
+}
+
+textarea,
+select {
+    width: 100%;
+    padding: 0.6rem;
+} 
+
+select {
+    padding: 0.5rem;
+}
+
+.radio-grupo {
+    display: grid;
+    grid-template-columns: 20px auto;
+    gap: 0.5rem;
+}
+
+/* Final */
+.boton {
+    display: inherit;
+    background-color: var(--texto);
+    border-radius: 0.5rem;
+    padding: 1.6rem 6rem;
+    margin: 2.3rem auto;
+}
+.agradecimiento {
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 0;
+}
