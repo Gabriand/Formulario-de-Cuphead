@@ -36,7 +36,6 @@ body {
 
 h1 {
     font-size: 4.5rem;
-    color: var(--texto);
     text-transform: uppercase;
     font-weight: 800;
 }
@@ -58,20 +57,31 @@ a {
 
 /* Presentación */
 .presentacion {
-    width: 75%;
-    margin: 0 auto;
+    width: 85%;
+    margin: 2rem auto;
+    padding: 0.1rem;
+    background-color: #0d0d0d9e;
+    border-radius: 1rem;
 }
 
 .presentacion__title,
 .presentacion__description {
     text-align: center;
+    margin: 0.9rem;
 }
 
 .presentacion__description {
     padding-bottom: 1rem;
-    color: var(--negro);
-    font-weight: 800;
 }
+
+
+@media (min-width: 768px) {
+    .presentacion {
+        width: 75%;
+        margin: 1.5rem auto;
+    }
+}
+
 
 /* Formulario */
 .formulario {
