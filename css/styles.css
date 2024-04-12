@@ -165,10 +165,19 @@ select {
 .boton {
     display: inherit;
     background-color: var(--texto);
+    font-weight: 800;
     border-radius: 0.5rem;
-    padding: 1.6rem 6rem;
+    width: 100%;
+    padding: 1.6rem 0;
     margin: 2.3rem auto;
 }
+
+@media (min-width: 768px) {
+    .boton {
+        width: 40%;
+    }
+}
+
 .agradecimiento {
     font-size: 1.3rem;
     text-align: center;
